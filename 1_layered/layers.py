@@ -57,7 +57,6 @@ class ApplicationLayer:
 
     def get_animal_sound(self, animal_name):
         self.cache_init_protection()
-        print('self.names', self.names_cache)
         try:
             if animal_name not in self.names_cache: 
                 return None
