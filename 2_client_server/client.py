@@ -15,6 +15,7 @@ def post_message(new_sound):
     req = urllib.request.Request(url, data=data, headers={
                                  'Content-Type': 'application/json'})
     response = urllib.request.urlopen(req)
+    return response
 
 
 if __name__ == '__main__':

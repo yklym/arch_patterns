@@ -14,7 +14,6 @@ def set_sound():
     global curr_animal_sound
     new_sound = request.json['sound']
     curr_animal_sound = new_sound
-    print('new sound', new_sound)
     return {'ok': 'ok'}
 
 
